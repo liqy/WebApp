@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    	function clickone(id){
+    		var result= myObj.getPwd(id.innerHTML);
+    		<!--alert(result);-->
+
+    		javaCallJs(result)
+    	}
+
+    	function javaCallJs(str) {
+    	     alert(str);
+            document.getElementById("content").innerHTML=str;
+        }
+
+    </script>
+</head>
+
+<body>
+<h1 onclick="clickone(this)">Hellor World</h1>
+<a href="pay://beie.com/1/123456?p=12345">支付宝</a>
+<p id="content">你</p>
+</body>
+
+</html>
